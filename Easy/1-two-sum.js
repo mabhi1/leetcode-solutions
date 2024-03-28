@@ -6,13 +6,13 @@
 
 function twoSum(nums, target) {
   // Object to store number and it's index
-  visited = {};
+  const visited = {};
 
   // Loop through the list
   for (let i = 0; i < nums.length; i++) {
     // If remainder is already visited, return
     if (target - nums[i] in visited) {
-      firstIndex = visited[target - nums[i]];
+      const firstIndex = visited[target - nums[i]];
       return [firstIndex, i];
     }
 
